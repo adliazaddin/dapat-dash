@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<title>Material Dashboard System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	
+	<!-- amcharts -->
+	
+	<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"startDuration": 1,
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"bullet": "round",
+							"id": "AmGraph-1",
+							"title": "graph 1",
+							"type": "smoothedLine",
+							"valueField": "Material A"
+						},
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"bullet": "square",
+							"id": "AmGraph-2",
+							"title": "graph 2",
+							"type": "smoothedLine",
+							"valueField": "Material B"
+						},
+						{
+							"id": "AmGraph-3",
+							"title": "graph 3",
+							"valueField": "Material C"
+						},
+						{
+							"id": "AmGraph-4",
+							"title": "graph 4",
+							"valueField": "Material D"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Axis title"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Chart Title"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "January",
+							"Material C": "35",
+							"Material A": "48",
+							"Material B": "45",
+							"Material D": "47"
+						},
+						{
+							"category": "February",
+							"Material C": "33",
+							"Material A": "46",
+							"Material B": "43",
+							"Material D": "43"
+						},
+						{
+							"category": "March",
+							"Material C": "30",
+							"Material A": "42",
+							"Material B": "43",
+							"Material D": "33"
+						},
+						{
+							"category": "April",
+							"Material C": "29",
+							"Material A": "41",
+							"Material B": "33",
+							"Material D": "31"
+						},
+						{
+							"category": "May",
+							"Material C": "28",
+							"Material A": "35",
+							"Material B": "21",
+							"Material D": "24"
+						},
+						{
+							"category": "June",
+							"Material C": "28",
+							"Material A": "23",
+							"Material B": "20",
+							"Material D": "22"
+						},
+						{
+							"category": "July",
+							"Material C": "28",
+							"Material A": "16",
+							"Material B": "20",
+							"Material D": 19
+						},
+						{
+							"category": "August",
+							"Material C": "28",
+							"Material A": "15",
+							"Material B": "19",
+							"Material D": "7"
+						}
+					]
+				}
+			);
+		</script>
+        
+	
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>DAPAT</strong> Dashboard</a>
+									
+								</header>
+
+							<!-- Banner -->
+						  <section id="banner">
+									<div class="content">
+									<h3>Material Trend</h3>
+										<div id="chartdiv" style="width:100%; height:600px;"></div>
+
+									</div>
+								</section>
+
+							<!-- Section -->
+								
+
+							<!-- Section -->
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="home.html">Homepage</a></li>
+										<li><span class="opener">Material Inventory</span>
+												<ul>
+													<li><a href="iv.html">Inventory List</a></li>
+													<li><a href="trend.html">Trend</a></li>
+												</ul>
+										<li><a href="movement.html">Material Movement</a></li>
+									</ul>
+								</nav>
+											
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Telekom Malaysia Berhad.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
